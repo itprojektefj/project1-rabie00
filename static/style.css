@@ -1,0 +1,34 @@
+body {
+  background-color: #07cbdc;
+}
+jumbotron {
+/*background-color: #00ff80;*/
+text-align:center;
+margin:30px;
+}
+.lable-styles{
+font-weight:bold;
+font-size:25px;
+}
+@media screen and (max-width:600px){
+.image-styles{
+width:700px;
+height:700px;
+float:center;
+}
+}
+.image-styles{
+width:90%;
+margin: 5px auto;
+display: block;
+}
+.img-back {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	filter: blur(5px);
+	background-position: center center;
+}
+.img-container {
+	position: relative;
+}

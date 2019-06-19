@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+
+
+{% endblock %}
+
+{% block body %}
+}
+
+
+<div class="img-container">
+  <div class="jumbotron img-container">
+    <div class="img-back" style="background-image: url({{image_books}});"></div>
+    <h1> Online books </h1>
+    <!--img class="image-styles" src={{ image_books }}-->
+
+  </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4 col-sm-4 col-xs-12" >
+            <form action="{{ url_for('register')}}" method="GET">
+            <div class="each-column">
+<h2>Click Register</h2>
+                <button class="btn btn-primary">Register</button>
+
+</div>
+            </form>
+            </div>
+
+        <div class="col-lg-4 col-sm-4 col-xs-12" >
+
+      <img class="image-styles" src={{ image_college }}>
+    </div>
+
+       <div class="col-lg-4 col-sm-4 col-xs-12" >
+           <form action="{{ url_for('login')}}" method="GET">
+       <div class="each-column">
+           <h2>Do you have account? Please click Login</h2>
+<button type="submit" class="btn btn-primary">Login</button>
+       </div>
+           </form>
+
+</div>
+
+{% endblock %}

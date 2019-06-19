@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+<h1>Register Now!</h1>
+{% endblock %}
+ {% block body %}
+
+
+<div class="container">
+    <div class="row">
+
+<div class="col-sm-6">
+
+<form action="/register" method="POST" class="form-styles">
+
+    <div class="form-group">
+    <label for="email" class="lable-styles"> Email:</label>
+     <input type="email" class="form-control" name="user_email" placeholder="Email" value="{{
+          request.form.user_email }}">
+        </div>
+    <div class="form-group">
+    <label for="username" class="lable-styles">User name:</label>
+     <input type="text" class="form-control" name="username" placeholder="User name" value="{{
+          request.form.username }}">
+    </div>
+    <div class="form-group">
+    <label for="password" class="lable-styles">Password:</label>
+     <input type="password" class="form-control" name="password" placeholder="Password" value="{{
+          request.form.password }}">
+    </div>
+    <div class="form-group">
+    <label for="confirm_password" class="lable-styles">Confirm Password:</label>
+     <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" value="{{
+          request.form.confirm_password }}">
+    </div>
+
+    <button  type="submit" class="btn btn-primary">Register</button>
+</form>
+
+
+</div>
+
+        <div class="col-sm-6">
+
+
+         </div>
+    </div>
+</div>
+
+{% endblock %}
